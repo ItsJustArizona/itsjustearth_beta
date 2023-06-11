@@ -18,6 +18,6 @@ Feel free to take a look under the hood and see what makes up the website. While
 
 
 
-##Copywrite Its Just Earth 2023
+##Copyright Its Just Earth 2023
 ##In association with Space Gnomes Co
 ##An Arizona Original Software
