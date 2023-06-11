@@ -1,0 +1,210 @@
+@font-face {
+    font-family: spacegnomesco;
+    src: url("../font/Spacegnomesofficial-Regular.ttf");
+}   
+
+body{
+    background-color: black;
+    font-family: monospace;
+}
+
+/*Laptop and Desktop*/
+    @media (min-width: 845px){
+
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            padding-top: 20px;
+            padding-bottom: 5%;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+            text-align: center;
+        }
+
+        .parallax {
+        background-image: url("../img/donatebackground.png");
+        min-height: 500px; 
+        margin-top: 49px;
+        opacity: 0.3;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .start{
+            color: white;
+            position: absolute;
+            font-size: 28px;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%,-60%);
+            max-width: 600px;
+        }
+
+        .start2{
+            color: white;
+            position: absolute;
+            font-size: 28px;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%,-60%);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .donationbutton{
+        background-color: white;
+        position:absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -55%);
+        color: black; 
+        width: 300px;
+        height: 100px;
+        border-radius: 8px;
+        z-index: 1;
+        }
+
+        .donationbutton:hover {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        }
+
+        .donationbutton:active {
+        border: 2px solid #B2AC88;
+        color: #B2AC88;
+        background-color: transparent;
+        }
+
+        .donationtext {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        font-size: 20px;
+        font-family: spacegnomesco;
+        }
+}
+/*End of Desktop*/
+
+
+/*Mobile Device*/
+    @media (max-width: 844px){
+
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+            text-align: center;
+        }
+
+        .parallax {
+            background-image: url("../img/donatebackground.png");
+            min-height: 500px; 
+            margin-top: 49px;
+            opacity: .3;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .start{
+            color: white;
+            position: absolute;
+            font-size: 20px;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%,-60%);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .start2{
+            color: white;
+            position: absolute;
+            font-size: 20px;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%,-60%);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .donationbutton{
+            background-color: white;
+            position:absolute;
+            left: 50%;
+            top: 37%;
+            transform: translate(-50%, -50%);
+            color: black;
+            z-index: 1; 
+            width: 300px;
+            height: 100px;
+            border-radius: 8px;
+        }
+
+        .donationbutton:hover {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        .donationbutton:active {
+            border: 2px solid #B2AC88;
+            color: #B2AC88;
+            background-color: transparent;
+        }
+
+        .donationtext {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            font-size: 20px;
+            font-family: spacegnomesco;
+            text-align: center;
+            min-width: fit-content;
+        }
+}
+/*End of Mobile*/
+
+footer{
+    color: white;
+    position: relative;
+    bottom: 17px;
+    left: 50%;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    transform: translate(-50%);
+    font-size: 12px;
+    border-top: 3px solid white;
+}
+
+a:link{
+    color: #B2AC88;
+}
+
+a:visited{
+    color: #B2AC88;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: #B2AC88;
+}

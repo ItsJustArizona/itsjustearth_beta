@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+        <title>Colo State U</title>
+        <style>
+
+            body{
+                background-color: black;
+                font-family: monospace;
+                
+                }
+            
+                /*Laptop and Desktop*/
+            @media (min-width: 845px){
+                .logo {
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    position: fixed;
+                    z-index: 3;
+                    }
+
+                .logo1{
+                    opacity:0;
+                    height: 0px;
+                    width: 0px;
+                    }
+
+                
+
+                .logofollow{
+                font-size: 20px;
+                position: fixed;
+                color: white;
+                top: 20px;
+                left: 20px;
+                z-index: 3;
+                
+                
+            }
+
+            .watersource{
+                position: fixed;
+                right: 20px;
+                font-size: 12px;
+                color: white;
+                top: 20px;
+                z-index: 3;
+                
+
+            }
+            .habitat{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 25px;
+                color: white;
+                align-content: center;
+                z-index: 1;
+                
+            }
+            .collapsible {
+                size: 0px;
+                opacity: 0;
+                }
+
+                .collapsible:hover {
+                size: 0px;
+                opacity: 0;
+                }
+
+                .content {
+                size: 0;
+                opacity: 0;
+                }
+                
+                .section2title{
+                font-size: 20px;
+                color: white;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+                width: fit-content;
+            }
+
+            .elevationtext{
+                font-family: monospace;
+                font-size: 16px;
+                width: fit-content;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+            }
+
+            .biome{
+                font-family: monospace;
+                font-size: 12px;
+                width: fit-content;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+            }
+
+            .navbar{
+                background-color: black;
+                position: fixed;
+                height: 80px;
+                width: 100%;
+                top: 0px;
+                z-index: 2;
+            }
+        
+            }
+        
+            /*Mobile Device*/
+            @media (max-width: 844px){
+                .logo {
+                    opacity:0;
+                    height: 0px;
+                    width: 0px;
+                    }
+
+                .logo1{
+                        position: absolute;
+                        left: 60px;
+                        top: 15px;
+                        transform: translate(-50%);
+                        z-index: 3;
+                        }
+
+                .logofollow{
+                font-size: 15px;
+                position: fixed;
+                color: white;
+                top: 20px;
+                left: 20px;
+                z-index: 3;
+                
+            }
+
+            .watersource{
+                position: fixed;
+                right: 20px;
+                font-size: 10px;
+                color: white;
+                width: 21%;
+                z-index: 3;
+                top: 10px;
+
+            }
+
+            .navbar{
+                background-color: black;
+                position: fixed;
+                height: 90px;
+                width: 100%;
+                top: 0px;
+                z-index: 2;
+            }
+
+            .habitat{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 25px;
+                color: white;
+                z-index: 1;
+                width:max-content;
+                 }
+
+                .collapsible {
+                background-color: white;
+                color: black;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border-radius: 4px;
+                border: none;
+                text-align: center;
+                outline: none;
+                font-size: 15px;
+                font-family: monospace;
+                
+                }
+
+                .collapsible:hover {
+                background-color: black;
+                color: white;
+                }
+
+                .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: white;
+                color: black;
+                border-radius: 4px;
+                
+                
+            }
+           
+            .section2title{
+                font-size: 30px;
+                color: white;
+                font-family: monospace;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                position: relative;
+                left: 50%;
+                transform:translate(-50%);
+                width: fit-content;
+            }
+
+            .elevationtext{
+                font-family: monospace;
+                font-size: 16px;
+                width: fit-content;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+            }
+
+            .biome{
+                font-family: monospace;
+                font-size: 12px;
+                width: fit-content;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+            }
+
+            
+        }
+            
+            footer{
+                color: white;
+                position: relative;
+                bottom: 17px;
+                left: 50%;
+                width: fit-content;
+                padding-top: 30px;
+                transform: translate(-50%);
+                }
+                
+            #logolead{
+                display: block;
+
+            }
+
+            #logofollow{
+                display: none;
+            }
+
+           
+
+            
+
+            
+            .parallax {
+  /* The image used */
+  background-image: url("bckgrnd.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+  margin-top: 100px;
+  opacity: .25;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+            
+        </style>
+    </head>
+<body>
+    <div class = "navbar"></div>
+   
+    <div class = "logo">
+        <img src = "colostate.png" width = "15%" id = "logolead">
+        </div>
+        <div class = "logo1">
+            <img src = "colostate.png" width = "100px" id = "logolead">
+        </div>
+        <div class = "logofollow" id = "logofollow">
+            It's Just Earth
+            <p style="font-size: 8px">Colorado State University</p>
+           
+        </div>
+
+        <div class = "watersource">
+           City Water Source: Pouder River & Horestooth Resivour 
+        </div>
+
+        <div class = "habitat">
+            Ecosystem: University
+            <p>
+            <div class = "elevationtext">
+                Elevation: 5000 Feet
+            </div>
+            </p>
+            <p>
+                <div class = "biome">
+                    Biome: Shortgrass Prairie
+                </div>
+            </p>
+        </div>
+
+        
+       
+<div class = "parallax"></div>
+    
+<!--Section 2 Mobile-->   
+    
+    <div style="height:1000px;background-color:black">
+            <div class = "section2title">
+                Let Us Get Started
+            </div>
+            
+            <!--What's In Season-->
+            <button type="button" class="collapsible"><b>What's In Season &darr;</b></button>
+            <div class="content">
+                Hello
+            </div>
+            <!--Sustainable Subsitutes-->
+            <button type="button" class="collapsible"><b>Sustainable Substitutes &darr;</b></button>
+            <div class="content">
+                Hello
+            </div>
+            <!--Support Local Ag-->
+            <button type="button" class="collapsible"><b>Support Local Ag &darr;</b></button>
+            <div class="content">
+                Hello
+            </div>
+            <!--Connect With Nature-->
+            <button type="button" class="collapsible"><b>Go On A Picnic &darr;</b></button>
+            <div class="content">
+                Hello
+            </div>
+        
+        </div>
+
+
+        <script type="text/javascript" src = "secondjava.js"></script>
+
+</body>
+
+<footer>
+    &copy; It's Just Earth | Alpha 1.0 Colorado
+</footer>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Oh no!</title>
+    <style>
+
+        body{
+            background-color: black;
+            font-family: monospace;
+        }
+
+        /*Windows, Mac, Linux*/
+        @media (min-width: 845px){
+            
+            .logo {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            .logo1{
+                 opacity:0;
+            }
+
+            .imagesize{
+                width: 600px;
+                height: 420px;
+                left: 50%;
+                top: 60%;
+                transform: translate(-50%,-50%);
+                position: fixed;
+
+            }
+
+            .basictext{
+                font-size: 16px;
+                font-family: monospace;
+                left: 50%;
+                top: 30%;
+                transform: translate(-50%, -50%);
+                position: fixed;
+                color: white;
+            }
+
+        }
+
+        /*IOS, Android*/
+        @media (max-width: 844px){
+            .logo {
+                opacity:0;
+                width: 0px;
+                height: 0px;
+            }
+
+            .logo1{
+                position: fixed;
+                left: 50%;
+                top: 10px;
+                transform: translate(-50%);
+            }
+
+            .imagesize{
+                width: 533px;
+                height: 373px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                position: fixed;
+            }
+        }
+
+        footer{
+            color: white;
+            position: fixed;
+            bottom: 17px;
+            left: 50%;
+            width: max-content;
+            padding-top: 10px;
+            transform: translate(-50%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--Logo-->
+    <div class = "logo">
+        <img src = "logo.png" width = "15%">
+        </div>
+        <div class = "logo1">
+            <img src = "logo.png" width = "200px">
+        </div>
+
+    <!--Broken Computer-->
+    <img src = "error_computer.png" class = "imagesize">
+
+    <!--Error Message-->
+    <div class = "basictext">
+        Oh no! It looks like something went wrong with finding your location
+    </div>
+
+    <!--Footer-->
+    <footer>
+    
+        &copy; It's Just Earth | Alpha 1.0 Colorado
+    
+    </footer>
+
+
+</body>
+
+
+
+</html>

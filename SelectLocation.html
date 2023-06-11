@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type = "text/javascript" src = "noresponsejava.js"></script>
+    <title>Oh no!</title>
+    <style>
+
+        body{
+            background-color: black;
+            font-family: monospace;
+        }
+    
+
+        /*Windows, Mac, Linux*/
+        @media (min-width: 845px){
+            
+            .logo {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            .logo1{
+                 opacity:0;
+            }
+
+            .imagesize{
+                width: 600px;
+                height: 420px;
+                left: 50%;
+                top: 60%;
+                transform: translate(-50%,-50%);
+                position: fixed;
+
+            }
+
+            .basictext{
+                font-size: 16px;
+                font-family: monospace;
+                left: 50%;
+                top: 30%;
+                transform: translate(-50%, -50%);
+                position: fixed;
+                color: white;
+            }
+
+
+        }
+
+        /*IOS, Android*/
+        @media (max-width: 844px){
+            .logo {
+                opacity:0;
+                width: 0px;
+                height: 0px;
+            }
+
+            .logo1{
+                position: fixed;
+                left: 50%;
+                top: 10px;
+                transform: translate(-50%);
+            }
+
+            .imagesize{
+                width: 533px;
+                height: 373px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                position: fixed;
+            }
+        }
+
+        footer{
+            color: white;
+            position: fixed;
+            bottom: 17px;
+            left: 50%;
+            width: max-content;
+            padding-top: 10px;
+            transform: translate(-50%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--Logo-->
+    <div class = "logo">
+        <img src = "logo.png" width = "15%">
+        </div>
+        <div class = "logo1">
+            <img src = "logo.png" width = "200px">
+        </div>
+
+        <!--Selection Tool-->
+   
+    <form name="form1" id="form1" action="/action_page.php">
+        State: <select name="subject" id="subject">
+            <option value="" selected="selected">Select State</option>
+          </select>
+          <br><br>
+        Closest City: <select name="topic" id="topic">
+            <option value="" selected="selected">Select Nearest City</option>
+          </select>
+          <br><br>
+        Area: <select name="chapter" id="chapter">
+            <option value="" selected="selected">Select Area</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">  
+    </form>
+
+
+    <!--Footer-->
+    <footer>
+    
+        &copy; It's Just Earth | Alpha 1.0 Colorado
+    
+    </footer>
+
+
+</body>
+
+
+
+</html>

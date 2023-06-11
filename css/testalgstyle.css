@@ -1,0 +1,295 @@
+body{
+    background-color: black;
+    font-family: monospace;
+    }
+            
+/*Laptop and Desktop*/
+    @media (min-width: 845px){
+
+        .habitat{
+            position: absolute;
+            top: 55%;
+            left: 60px;
+            font-size: 15px;
+            color: white;
+            align-content: center;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .biome{
+            font-family: monospace;
+            font-size: 12px;
+            width: fit-content;
+            left: 50%;
+            transform: translate(-50%);
+            position: relative;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+        .collapsible:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+           
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+        }
+
+        .welcome {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            left: 60px;
+            top: 25%;
+        }
+
+        .beforestart{
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            left: 60px;
+            top: 35%;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .parallax {
+            background-image: url("../img/testbckgrnd4.png");
+            min-height: 500px; 
+            margin-top: 100px;
+            opacity: .75;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #searchbar{
+            left: -5px;
+            padding: 5px;
+            border: none;
+            border-bottom: 4px solid black;
+            font-family: monospace;
+            width: 40%;
+            height: 20px;
+            font-size: 16px;
+            color: black;
+            outline: none;
+            margin-top: 10px;
+        }
+
+    }
+/*End of Desktop*/
+        
+/*Mobile Device*/
+    @media (max-width: 844px){
+        .habitat{
+            position: absolute;
+            margin-top: 400px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 10px;
+            color: white;
+            z-index: 1;
+            width:max-content;
+            text-align: center;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+        .collapsible:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+           
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+        }
+
+        .biome{
+            font-family: monospace;
+            font-size: 12px;
+            width: fit-content;
+            left: 50%;
+            transform: translate(-50%);
+            position: relative;
+        }
+        
+        .welcome {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .beforestart{
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            padding-top: 160px;
+            left: 50%;
+            transform: translate(-50%);
+            max-width: fit-content;
+            text-align: center;
+        }
+
+        .parallax {
+            background-image: url("../img/testbckgrnd6.png");
+            min-height: 500px; 
+            margin-top: 100px;
+            opacity: .25;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        
+        #searchbar{
+            left: -5px;
+            padding: 5px;
+            border: none;
+            border-bottom: 4px solid black;
+            font-family: monospace;
+            width: 80%;
+            height: 20px;
+            font-size: 12px;
+            color: black;
+            outline: none;
+            margin-top: 10px;
+        }
+
+    }
+/*End of Mobile*/        
+footer{
+    color: white;
+    position: static;
+    align-items: center;
+    align-content: center;
+    bottom: 0px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: max-content;
+    padding: 10px 10px 10px 10px;
+    border-top: 3px solid white;
+    }
+
+a:link{
+    color: #a3b288;
+}
+            
+a:visited{
+    color: #a3b288;
+}
+
+a:hover{
+    color: black;
+}
+            
+a:active{
+    color: #a3b288;
+}
+           
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+}
+    
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Transition*/
+.transition{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: -0.001%;
+    left: -0.001%;
+}
+
+#transition{
+    display: none;
+}
+/*End Tranisiton*/
+
+ 
+  #list{
+    color: black;
+   }
+ 
+.sort{
+   color: black;   
+  } 

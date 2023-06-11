@@ -1,0 +1,184 @@
+body{
+    background-color: black;
+    font-family: monospace;
+}
+            
+/*Laptop and Desktop*/
+    @media (min-width: 845px){
+        
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+        }
+
+        .parallax {
+            background-image: url("../StateImg/Oregon/WillametteValleyDesktop.gif");
+            min-height: 500px; 
+            margin-top: 49px;
+            opacity: 1;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .start{
+            color: white;
+            position: absolute;
+            font-size: 18px;
+            left: 80%;
+            top: 50%;
+            transform: translate(-10%,-50%);
+            max-width: 600px;
+        }
+
+        .bigbox{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90%;
+            justify-content: space-between;
+            display: flex;
+            opacity: 1;
+        }
+
+        .mbigbox1{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90%;
+            justify-content: space-between;
+            display: flex;
+            opacity: 0;
+        }
+
+}
+/*End of Desktop*/
+
+/*Mobile Device*/
+    @media (max-width: 844px){
+           
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+            text-align: center;
+        }
+
+        .parallax{
+            background-image: url("../StateImg/Oregon/WillametteValleyMobile.gif");
+            min-height: 500px; 
+            margin-top: 49px;
+            opacity: .5;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .start{
+            color: white;
+            position: absolute;
+            font-size: 18px;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .bigbox{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90%;
+            justify-content: space-between;
+            display: flex;
+            opacity: 0;
+        }   
+
+        .mbigbox1{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90%;
+            justify-content: space-between;
+            display: flex;
+            opacity: 1;
+        }
+
+}
+/*End of Mobile*/
+            
+footer{
+    color: white;
+    position: relative;
+    left: 50%;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    transform: translate(-50%);
+    font-size: 12px;
+    border-top: 3px solid white;
+    }
+           
+a:link{
+    color: #B2AC88;
+}
+            
+a:visited{
+    color: #B2AC88;
+}
+
+a:hover{
+    color: black;
+}
+            
+a:active{
+    color: #B2AC88;
+}
+           
+.box{
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    position: relative;
+    top: 50px;
+    float: left;
+    margin: 4%;
+    background-image: url("../img/boxborder.png");
+    background-size: 150px 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boximage{
+    width: 150px;
+    height: 225px;
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+}
+    
+.boxtext{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 270px;
+    color: white;
+}
+            
+            

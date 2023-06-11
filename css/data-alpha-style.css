@@ -1,0 +1,172 @@
+body{
+    background-color: black;
+    font-family: monospace;
+    color: white;
+}
+
+/*Laptop and Desktop*/
+    @media (min-width: 845px){
+        .logofollow{
+            font-size: 20px;
+            position: fixed;
+            color: white;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+        }  
+
+        .biome{
+            font-family: monospace;
+            font-size: 16px;
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            top: 200px;
+            position: relative;
+        }
+
+        .navbar{
+            background-color: black;
+            position: fixed;
+            height: 80px;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+            left: 0px;
+        }
+
+        .section2title{
+            font-size: 30px;
+            color: white;
+            font-family: monospace;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            position: relative;
+            left: 50%;
+            transform:translate(-50%);
+            width: fit-content;
+        }
+
+        .parallax {
+            background-color: black;
+            min-height: 500px; 
+            margin-top: 10%;
+            opacity: 1;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .start{
+            color: white;
+            position: relative;
+            font-size: 28px;
+            left: 50%;
+            top: 150px;
+            transform: translate(-50%,-70%);
+            max-width: 600px;
+        }
+}
+/*End of Desktop*/
+
+
+/*Mobile Device*/
+    @media (max-width: 844px){
+        .logofollow{
+        font-size: 15px;
+        position: fixed;
+        color: white;
+        top: 30px;
+        left: 20px;
+        z-index: 3;
+        }
+
+    .navbar{
+        background-color: black;
+        position: fixed;
+        height: 90px;
+        width: 100%;
+        top: 0px;
+        z-index: 2;
+        }
+
+    .section2title{
+        font-size: 30px;
+        color: white;
+        font-family: monospace;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        position: relative;
+        left: 50%;
+        transform:translate(-50%);
+        width: fit-content;
+    }
+
+    .biome{
+        font-family: monospace;
+        font-size: 12px;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        top: 200px;
+        position: relative;
+    }
+
+    .parallax {
+        background-color: black;
+        min-height: 500px; 
+        margin-top: 10%;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .start{
+        color: white;
+        position: relative;
+        font-size: 16px;
+        left: 50%;
+        top: 150px;
+        transform: translate(-50%, -70%);
+        text-align: center;
+    }
+}
+/*End of Mobile*/
+
+footer{
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 90%;
+    height: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 3px solid white;
+}
+.footercontent{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width:max-content;
+}
+
+a:link{
+    color: #B2AC88;
+}
+
+a:visited{
+    color: #B2AC88;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: #B2AC88;
+}
